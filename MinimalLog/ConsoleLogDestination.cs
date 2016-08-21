@@ -11,6 +11,8 @@ namespace MinimalLog
         {
             _severityColors = new Dictionary<Severity, Tuple<ConsoleColor, ConsoleColor>>
             {
+                {Severity.Trace, new Tuple<ConsoleColor, ConsoleColor>(ConsoleColor.DarkGray, ConsoleColor.White)},
+                {Severity.Debug, new Tuple<ConsoleColor, ConsoleColor>(ConsoleColor.DarkGray, ConsoleColor.White)},
                 {Severity.Info, new Tuple<ConsoleColor, ConsoleColor>(ConsoleColor.DarkGray, ConsoleColor.White)},
                 {Severity.Warning, new Tuple<ConsoleColor, ConsoleColor>(ConsoleColor.DarkYellow, ConsoleColor.Yellow)},
                 {Severity.Error, new Tuple<ConsoleColor, ConsoleColor>(ConsoleColor.DarkRed, ConsoleColor.Red)}
